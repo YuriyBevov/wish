@@ -39,10 +39,9 @@
       margin-bottom: 0;
       @include m-b-mobile-lg-down {
         margin-right: auto;
+        padding-right: 20px;
       }
     }
-
-
   }
 
   &-section-title {
