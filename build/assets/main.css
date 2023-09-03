@@ -641,7 +641,7 @@ a {
 .lw-alt-color-wrapper {
   padding: 25px;
   background-color: var(--white);
-  border-radius: 12px;
+  border-radius: var(--base-border-radius);
 }
 .lw-section {
   margin-bottom: 48px;
@@ -664,6 +664,15 @@ a {
   margin-bottom: 24px;
   margin-right: 18px;
   color: var(--secondary);
+}
+.lw-main-title {
+  font-family: var(--secondary-font);
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: -0.31px;
+  margin: 0;
+  color: var(--white);
 }
 .lw-base-link {
   font-family: var(--secondary-font);
@@ -698,6 +707,18 @@ a {
 
 /* Компоненты */
 /* Секции */
+.features .lw-alt-color-wrapper {
+  position: relative;
+}
+.features__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 0;
+  background-color: var(--primary);
+}
+
 .catalog-preview__grid {
   display: -ms-grid;
   display: grid;
@@ -741,7 +762,6 @@ a {
 .company-info__wrapper > img {
   min-height: 635px;
   border-radius: var(--base-border-radius);
-  /* up/down desktop-lg(1920),desktop(1440),laptop(1140),tablet-lg(960),tablet(768),mobile-lg(534)*/
 }
 @media (max-width: 1720px) {
   .company-info__wrapper > img {

@@ -1,3 +1,15 @@
 .features {
+  .lw-alt-color-wrapper {
+    position: relative;
+  }
 
+  &__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    border: 0;
+    background-color: var(--primary);
+  }
 }
