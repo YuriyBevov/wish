@@ -1,0 +1,39 @@
+.delivery {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2vw;
+
+        @include m-b-tablet-down {
+            grid-template-columns: 1fr;
+          }
+    }
+    &-content {
+        border-radius: var(--base-border-radius);
+        background: var(--white);
+      }
+      &-content img {
+        @include m-b-mobile-lg-down {
+            min-height: 350px;
+            border-radius: 12px 12px 0 0;
+          }
+      }
+
+
+      &-content-alt {
+        border-radius: 0px 0px 12px 12px;
+        background: var(--white);
+      }
+
+      &-content-alt__img-lg {
+        @include m-b-mobile-lg-down {
+            display: none;
+          }
+      }
+      &-content-alt__img-sm {
+        display: none;
+        @include m-b-mobile-lg-down {
+            display: flex;
+          }
+      }
+}
