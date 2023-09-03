@@ -12,14 +12,11 @@
       min-height: 635px;
       border-radius: var(--base-border-radius);
 
-      /* up/down desktop-lg(1920),desktop(1440),laptop(1140),tablet-lg(960),tablet(768),mobile-lg(534)*/
       @include m-b-down(1720px) {
         min-height: initial;
       }
     }
   }
-
-
 
   &__content {
     @extend .flex-column;

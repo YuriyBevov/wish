@@ -15,7 +15,7 @@
   &-alt-color-wrapper {
     padding: 25px ;
     background-color: var(--white);
-    border-radius: 12px;
+    border-radius: var(--base-border-radius);
   }
 
   &-section {
@@ -41,6 +41,15 @@
     margin-bottom: 24px;
     margin-right: 18px;
     color: var(--secondary);
+  }
+
+  &-main-title {
+    font-family: var(--secondary-font);
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -0.31px;
+    color: var(--white);
   }
 
   &-base-link {
