@@ -1,0 +1,30 @@
+.company-info {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 6fr 7fr;
+    grid-gap: 2vw;
+
+    @include m-b-tablet-down {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__content {
+    @extend .flex-column;
+    justify-content: center;
+    padding: 0 20px;
+
+    @include m-b-tablet-down {
+      padding: 20px 0;
+    }
+
+    img {
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 12px;
+    }
+  }
+}

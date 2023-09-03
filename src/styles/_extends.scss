@@ -49,7 +49,7 @@
   border: 0;
 }
 
-.btn-reset {
+.btn-default {
   border: none;
   padding: 0;
   background: transparent;
@@ -91,4 +91,42 @@
   &:focus {
     opacity: 0.7;
   }
+}
+
+.main-btn-hover {
+  transition: background-color var(--main-transition), border-color var(--main-transition), color var(--main-transition);
+
+  @include m-b-tablet-up {
+    &:hover,
+    &:focus {
+      border-color: var(--primary);
+      background-color: transparent;
+      color: var(--primary);
+    }
+  }
+}
+
+.main-btn-outlined-hover {
+  transition: background-color var(--main-transition), border-color var(--main-transition), color var(--main-transition);
+
+  @include m-b-tablet-up {
+    &:hover,
+    &:focus {
+      border-color: transparent;
+      background-color: var(--primary);
+      color: var(--white);
+    }
+  }
+}
+
+.section-inner-offset {
+  padding: 25px !important;
+}
+
+.section-white-theme {
+  background-color: var(--white) !important;
+}
+
+.section-border {
+  border-radius: 12px !important;
 }
