@@ -637,7 +637,7 @@ a {
   padding: 0 var(--container-offset);
   max-width: var(--container-fluid-width);
 }
-.lw-section-wrapper {
+.lw-alt-color-wrapper {
   padding: 25px;
   background-color: var(--white);
   border-radius: 12px;
@@ -703,7 +703,6 @@ a {
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1vw;
-  /* up/down desktop-lg(1920),desktop(1440),laptop(1140),tablet-lg(960),tablet(768),mobile-lg(534)*/
 }
 @media (max-width: 767px) {
   .catalog-preview__grid {
