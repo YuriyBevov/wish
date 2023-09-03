@@ -16,6 +16,14 @@
     padding: 25px ;
     background-color: var(--white);
     border-radius: var(--base-border-radius);
+
+    @include m-b-tablet-down {
+      padding: 25px 20px;
+    }
+
+    @include m-b-mobile-lg-down {
+      padding: 20px 15px;
+    }
   }
 
   &-section {
@@ -29,7 +37,12 @@
 
     .lw-section-title {
       margin-bottom: 0;
+      @include m-b-mobile-lg-down {
+        margin-right: auto;
+      }
     }
+
+
   }
 
   &-section-title {
@@ -41,6 +54,14 @@
     margin-bottom: 24px;
     margin-right: 18px;
     color: var(--secondary);
+
+    @include m-b-tablet-down {
+      font-size: 20px;
+    }
+
+    @include m-b-mobile-lg-down {
+      font-size: 18px;
+    }
   }
 
   &-main-title {

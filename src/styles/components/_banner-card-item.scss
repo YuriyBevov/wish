@@ -1,0 +1,33 @@
+.banner-card-item {
+  @extend .flex-column;
+  width: 100%;
+  max-width: 300px;
+
+  @include m-b-tablet-down {
+    max-width: 230px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin-bottom: 12px;
+
+    border-radius: var(--base-border-radius);
+
+    @include m-b-tablet-down {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    margin: 0;
+    color: var(--secondary);
+
+    @include m-b-tablet-down {
+      display: none;
+    }
+  }
+}
