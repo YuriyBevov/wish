@@ -47,6 +47,10 @@
     grid-area: b3;
     grid-row: 4 / 6;
     order: 5;
+    flex-direction: row;
+    @include m-b-mobile-lg-down {
+        flex-direction: column;
+    }
    }
 
    &__link {

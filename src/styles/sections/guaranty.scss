@@ -3,23 +3,21 @@
       display: grid;
       grid-template-columns: 5fr 6fr;
       grid-gap: 2vw;
-
+      align-items: start;
         @include m-b-laptop-down {
             grid-template-columns: 1fr;
           }
     }
     &__grid-side {
-      max-height: 630px;
-      min-height: 320px;
       
       @include m-b-laptop-down {
         background-color: var(--white);
       }
 
       @include m-b-mobile-lg-down {
-        min-height: 800px;
       }
     }
+
 
     &__desc {
       margin: 0;
