@@ -16,7 +16,14 @@
     padding: 25px ;
     background-color: var(--white);
     border-radius: var(--base-border-radius);
-    margin-bottom: 20px;
+
+    @include m-b-tablet-down {
+      padding: 25px 20px;
+    }
+
+    @include m-b-mobile-lg-down {
+      padding: 20px 15px;
+    }
   }
 
   &-section {
@@ -30,6 +37,10 @@
 
     .lw-section-title {
       margin-bottom: 0;
+      @include m-b-mobile-lg-down {
+        margin-right: auto;
+        padding-right: 20px;
+      }
     }
   }
 
@@ -42,6 +53,24 @@
     margin-bottom: 24px;
     margin-right: 18px;
     color: var(--secondary);
+
+    @include m-b-tablet-down {
+      font-size: 20px;
+    }
+
+    @include m-b-mobile-lg-down {
+      font-size: 18px;
+    }
+  }
+
+  &-main-title {
+    font-family: var(--secondary-font);
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: -0.31px;
+    margin: 0;
+    color: var(--white);
   }
 
   &-main-title {

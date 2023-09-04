@@ -1,0 +1,33 @@
+.feature-item {
+  @extend .flex-centered-content;
+  flex-direction: column;
+  padding: 10px;
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    filter: saturate(0.4);
+    transition: filter var(--main-transition);
+
+    margin-bottom: 12px;
+  }
+
+  .feature-item__text {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: var(--secondary);
+  }
+
+  &:hover,
+  &:focus {
+    img {
+      filter: saturate(1);
+    }
+  }
+
+}

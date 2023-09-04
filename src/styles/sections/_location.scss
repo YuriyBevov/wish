@@ -1,0 +1,56 @@
+.location {
+  .lw-alt-color-wrapper {
+    background-image: url("../assets/img/map-underlay.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    grid-gap: 40px;
+
+    @include m-b-down(960px) {
+      grid-template-columns: 3fr 2fr;
+    }
+
+    @include m-b-mobile-lg-down {
+      grid-template-columns: 1fr;
+    }
+
+    &-side {
+      display: flex;
+
+      &:not(.location__grid-side--logo) > img {
+        width: 100%;
+        height: auto;
+        max-height: 450px;
+        border-radius: var(--base-border-radius);
+      }
+
+
+      &--logo {
+        position: relative;
+
+        @include m-b-mobile-lg-down {
+          padding: 30px 0;
+        }
+
+        img {
+          position: absolute;
+          top: 35%;
+          left: 35%;
+          transform: translate(-50%, -50%);
+
+          @include m-b-tablet-down {
+            left: 50%;
+          }
+
+          @include m-b-mobile-lg-down {
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
