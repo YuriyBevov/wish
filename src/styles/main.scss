@@ -7,6 +7,9 @@
 @import "extends";
 @import "common";
 
+/*layout*/
+@import "./layout/footer";
+
 /* Компоненты */
 @import "./components/swiper-slider-common";
 @import "./components/feature-item";

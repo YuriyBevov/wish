@@ -5,6 +5,7 @@
   padding: 20px;
   border: 1px solid var(--gray-2);
   background: var(--white);
+  box-sizing: border-box;
 
   &-swiper {
     z-index: 100;
@@ -67,6 +68,15 @@
     a:first-child {
       flex-grow: 1;
       max-width: 100%;
+    }
+
+    @include m-b-down(360px) {
+      flex-direction: column;
+      gap: 10px;
+      a {
+        width: 100%;
+        max-width: 100%;
+      }
     }
   }
 }
