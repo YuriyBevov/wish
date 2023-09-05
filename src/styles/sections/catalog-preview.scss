@@ -5,7 +5,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1vw;
 
-    @include m-b-tablet-down {
+    @include m-b-mobile-lg-down {
       grid-template-columns: repeat(2, 1fr);
     }
   }

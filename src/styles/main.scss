@@ -11,8 +11,9 @@
 @import "./components/swiper-slider-common";
 @import "./components/feature-item";
 @import "./components/banner-card-item";
+@import "./components/catalog-item";
 /* Секции */
-
+@import "./sections/hero";
 @import "./sections/features";
 @import "./sections/catalog-preview";
 @import "./sections/company-info";
@@ -23,6 +24,7 @@
 @import "./sections/payment";
 @import "./sections/contacts";
 @import "./sections/location";
+@import "./sections/catalog-top";
 
 /* Модальные окна */
 
