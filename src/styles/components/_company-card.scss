@@ -1,0 +1,48 @@
+.company-card {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 25px;
+  width: fit-content;
+
+  @include m-b-mobile-lg-down {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    gap: 10px;
+  }
+
+  &__logo {
+    width: 175;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &__rate {
+    grid-column: 2/3;
+    grid-row: 1/3;
+
+    @include m-b-mobile-lg-down {
+      order: 2;
+    }
+  }
+
+  &__phones {
+    @extend .flex-column;
+
+    a {
+      display: flex;
+      font-family: var(--secondary-color);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--secondary);
+
+      @include m-b-down(960px) {
+        font-size: 20px;
+      }
+
+      @include m-b-tablet-down {
+        font-size: 24px;
+      }
+    }
+  }
+}

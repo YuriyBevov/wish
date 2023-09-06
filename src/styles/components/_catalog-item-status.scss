@@ -1,0 +1,30 @@
+.catalog-item-status {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  padding-left: 25px;
+  color: var(--alt-black);
+  margin-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    transform: translateY(-50%);
+    content: '';
+    width: 17px;
+    height: 17px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--available::before {
+    background-image: url("../assets/img/icon-available.svg");
+  }
+
+  &--notavailable::before {
+    background-image: url("../assets/img/icon-not-available.svg");
+  }
+}

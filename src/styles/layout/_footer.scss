@@ -13,10 +13,6 @@
       flex-direction: column;
     }
   }
-
-  &__grid-side {
-    outline: 1px solid red;
-  }
 }
 
 .subscribe-form {
@@ -97,9 +93,7 @@
     }
 
     input {
-      min-height: 42px;
-
-
+      min-height: 44px;
     }
 
     input[type="text"] {
