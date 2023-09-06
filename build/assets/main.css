@@ -393,7 +393,6 @@ template {
   display: flex;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
-  -o-transition-property: transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-box-sizing: content-box;
@@ -423,7 +422,6 @@ template {
   position: relative;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
-  -o-transition-property: transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
 }
@@ -442,7 +440,6 @@ template {
   align-items: flex-start;
   -webkit-transition-property: height, -webkit-transform;
   transition-property: height, -webkit-transform;
-  -o-transition-property: transform, height;
   transition-property: transform, height;
   transition-property: transform, height, -webkit-transform;
 }
@@ -480,25 +477,21 @@ template {
 
 .swiper-3d .swiper-slide-shadow-left {
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 .swiper-3d .swiper-slide-shadow-right {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 .swiper-3d .swiper-slide-shadow-top {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 .swiper-3d .swiper-slide-shadow-bottom {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
@@ -661,7 +654,6 @@ template {
   position: absolute;
   text-align: center;
   -webkit-transition: 0.3s opacity;
-  -o-transition: 0.3s opacity;
   transition: 0.3s opacity;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -787,7 +779,6 @@ button.swiper-pagination-bullet {
   display: inline-block;
   -webkit-transition: 0.2s top, 0.2s -webkit-transform;
   transition: 0.2s top, 0.2s -webkit-transform;
-  -o-transition: 0.2s transform, 0.2s top;
   transition: 0.2s transform, 0.2s top;
   transition: 0.2s transform, 0.2s top, 0.2s -webkit-transform;
 }
@@ -807,7 +798,6 @@ button.swiper-pagination-bullet {
 .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   -webkit-transition: 0.2s left, 0.2s -webkit-transform;
   transition: 0.2s left, 0.2s -webkit-transform;
-  -o-transition: 0.2s transform, 0.2s left;
   transition: 0.2s transform, 0.2s left;
   transition: 0.2s transform, 0.2s left, 0.2s -webkit-transform;
 }
@@ -815,7 +805,6 @@ button.swiper-pagination-bullet {
 .swiper-horizontal.swiper-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   -webkit-transition: 0.2s right, 0.2s -webkit-transform;
   transition: 0.2s right, 0.2s -webkit-transform;
-  -o-transition: 0.2s transform, 0.2s right;
   transition: 0.2s transform, 0.2s right;
   transition: 0.2s transform, 0.2s right, 0.2s -webkit-transform;
 }
@@ -1001,7 +990,6 @@ button.swiper-pagination-bullet {
 
 .swiper-free-mode > .swiper-wrapper {
   -webkit-transition-timing-function: ease-out;
-  -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
   margin: 0 auto;
 }
@@ -1022,14 +1010,12 @@ button.swiper-pagination-bullet {
 
 .swiper-fade.swiper-free-mode .swiper-slide {
   -webkit-transition-timing-function: ease-out;
-  -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 
 .swiper-fade .swiper-slide {
   pointer-events: none;
   -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
   transition-property: opacity;
 }
 
@@ -1136,7 +1122,6 @@ button.swiper-pagination-bullet {
   overflow: hidden;
   -webkit-transition-property: opacity, height, -webkit-transform;
   transition-property: opacity, height, -webkit-transform;
-  -o-transition-property: transform, opacity, height;
   transition-property: transform, opacity, height;
   transition-property: transform, opacity, height, -webkit-transform;
 }
@@ -1333,7 +1318,6 @@ a {
 .text-truncate {
   white-space: nowrap;
   overflow: hidden;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 
@@ -1393,7 +1377,6 @@ a {
 /*transitions*/
 .hover-opacity, .contacts__link, .contacts__desc a, .contacts-social a, .catalog-preview__grid-item, .lw-base-link, .lw-breadcrumbs a {
   -webkit-transition: opacity var(--main-transition);
-  -o-transition: opacity var(--main-transition);
   transition: opacity var(--main-transition);
 }
 .hover-opacity:hover, .contacts__link:hover, .contacts__desc a:hover, .contacts-social a:hover, .catalog-preview__grid-item:hover, .lw-base-link:hover, .lw-breadcrumbs a:hover, .hover-opacity:focus, .contacts__link:focus, .contacts__desc a:focus, .contacts-social a:focus, .catalog-preview__grid-item:focus, .lw-base-link:focus, .lw-breadcrumbs a:focus {
@@ -1402,7 +1385,6 @@ a {
 
 .main-btn-hover, .lw-main-btn {
   -webkit-transition: background-color var(--main-transition), border-color var(--main-transition), color var(--main-transition);
-  -o-transition: background-color var(--main-transition), border-color var(--main-transition), color var(--main-transition);
   transition: background-color var(--main-transition), border-color var(--main-transition), color var(--main-transition);
 }
 @media (min-width: 768px) {
@@ -1415,7 +1397,6 @@ a {
 
 .main-btn-outlined-hover, .lw-main-btn--outlined {
   -webkit-transition: background-color var(--main-transition), border-color var(--main-transition), color var(--main-transition);
-  -o-transition: background-color var(--main-transition), border-color var(--main-transition), color var(--main-transition);
   transition: background-color var(--main-transition), border-color var(--main-transition), color var(--main-transition);
 }
 @media (min-width: 768px) {
@@ -1549,7 +1530,7 @@ a {
   background-image: url(../assets/img/delivery/arrow.svg);
   background-size: cover;
 }
-.lw-breadcrumbs p {
+.lw-breadcrumbs span {
   margin: 0 0 0 10px;
   color: var(--breadcrumbs-color);
 }
@@ -1634,7 +1615,6 @@ a {
   font-family: var(--secondary-font);
   font-size: 12px;
   font-weight: 400;
-  -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   color: var(--secondary);
 }
@@ -1733,7 +1713,6 @@ a {
   filter: saturate(0.4);
   -webkit-transition: -webkit-filter var(--main-transition);
   transition: -webkit-filter var(--main-transition);
-  -o-transition: filter var(--main-transition);
   transition: filter var(--main-transition);
   transition: filter var(--main-transition), -webkit-filter var(--main-transition);
   margin-bottom: 12px;
@@ -1833,14 +1812,10 @@ a {
   font-weight: 700;
   min-height: 58px;
   color: var(--secondary);
-  -webkit-line-clamp: 3;
-  /* Число отображаемых строк */
-  display: -webkit-box;
-  /* Включаем флексбоксы */
-  -webkit-box-orient: vertical;
-  /* Вертикальная ориентация */
-  overflow: hidden;
-  /* Обрезаем всё за пределами блока */
+  -webkit-line-clamp: 3; /* Число отображаемых строк */
+  display: -webkit-box; /* Включаем флексбоксы */
+  -webkit-box-orient: vertical; /* Вертикальная ориентация */
+  overflow: hidden; /* Обрезаем всё за пределами блока */
 }
 .catalog-item__footer {
   display: -webkit-box;
@@ -2137,36 +2112,27 @@ a {
   .delivery__grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    grid-gap: 3vw;
   }
 }
-.delivery__grid-side {
-  min-height: 650px;
-}
-@media (max-width: 533px) {
-  .delivery__grid-side {
-    min-height: 800px;
-  }
-}
-.delivery__grid-side img {
+.delivery img {
   position: relative;
   width: calc(100% + 50px);
   max-width: 100vw;
   top: -25px;
   left: -25px;
-  height: 100%;
-  max-height: 400px;
+  min-height: 300px;
   border-radius: 12px 12px 0 0;
-  margin-bottom: 25px;
 }
-.delivery__desc {
-  margin: 0;
+@media (max-width: 767px) {
+  .delivery img {
+    width: calc(100% + 30px);
+    top: -20px;
+    left: -15px;
+  }
+}
+.delivery p {
   color: var(--alt-black);
-}
-.delivery__desc:not(:last-child) {
-  margin-bottom: 12px;
-}
-.delivery__link {
-  margin-top: 12px;
 }
 
 .guaranty__grid {
