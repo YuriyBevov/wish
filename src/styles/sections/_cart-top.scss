@@ -1,0 +1,7 @@
+.cart-top {
+  &__grid {
+    display: grid;
+    grid-template-columns: auto 390px;
+    grid-gap: 20px;
+  }
+}

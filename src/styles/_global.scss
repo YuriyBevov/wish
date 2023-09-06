@@ -27,6 +27,8 @@ body {
   font-family: var(--base-font, sans-serif);
   font-weight: 400;
   line-height: 1.2;
+  height: 100%;
+  min-height: 100vh;
   color: var(--base-text-color);
   background-color: var(--main-bg-color);
 
