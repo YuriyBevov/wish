@@ -1,0 +1,88 @@
+.map {
+  position: relative;
+
+    @include m-b-laptop-down {
+      display: flex;
+      flex-direction: column;
+      background: var(--white);
+      border-radius: 12px;
+      padding-bottom: 70px;
+    }
+
+  iframe {
+    order: 2;
+    border-radius: 12px;
+  }
+
+  &__info {
+    @extend .list-reset;
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    width: 100%;
+    max-width: 470px;
+
+    @include m-b-laptop-down {
+      position: static;
+      order: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      max-width: 100%;
+    }  
+
+    @include m-b-mobile-lg-down {
+      grid-template-columns: 1fr;
+      grid-row-gap: 25px;
+    }
+  }
+
+  &__info-item {
+    @extend .flex-column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }  
+
+  &__info-item span {
+    font-size: 20px;
+  }
+
+  &__info-item p {
+    margin: 0;
+  }
+
+  &-phone {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    a {
+      @extend .hover-opacity;
+      color: var(--alt-black);
+    }  
+  }
+
+  &-mail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    a {
+      @extend .hover-opacity;
+    }  
+  }
+
+  &-mail span {
+    font-size: 12px;
+    color: rgba(22, 53, 96, 0.60);
+  }
+
+  .map-btn {
+    @include m-b-laptop-down {
+      position: absolute;
+      bottom: 25px;
+      left: 0;
+    }
+  }
+}

@@ -4,6 +4,7 @@
     grid-template-columns: 5fr 6fr;
     grid-gap: 2vw;
     align-items: start;
+    
       @include m-b-laptop-down {
         grid-template-columns: 1fr;
       }
