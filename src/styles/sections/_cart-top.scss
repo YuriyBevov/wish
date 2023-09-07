@@ -5,3 +5,16 @@
     grid-gap: 20px;
   }
 }
+
+.cart-content {
+  @extend .flex-column;
+  gap: 10px;
+
+  &__list {
+    @extend .list-reset;
+  }
+
+  &__list-item {
+
+  }
+}

@@ -10,7 +10,44 @@
         <div class="cart-content">
           <ul class="cart-content__list">
             <li class="cart-content__list-item">
-              1
+              <div class="cart-item">
+                <div class="cart-item__side">
+                  <span class="badge">-10%</span>
+                  <img src="./assets/img/cart-item.png" alt="Название товара" width="80" height="80">
+                </div>
+                <div class="cart-item__content">
+                  <h3 class="cart-item__content-title">Планшет Apple iPad mini (2021) 64Gb Wi-Fi Global, розовый</h3>
+                  <ul class="cart-item__content-colors">
+                    <li>
+                      <div class="color-box" aria-hidden="true" style="background-color: pink;"></div>
+                      <span>Розовый</span>
+                    </li>
+                    <li>
+                      <div class="color-box" aria-hidden="true" style="background-color: red;"></div>
+                      <span>Красный</span>
+                    </li>
+                    <li>
+                      <div class="color-box" aria-hidden="true" style="background-color: blue;"></div>
+                      <span>Синий</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="cart-item__counter counter">
+                  @include('../../components/counter.html')
+                </div>
+
+                <div class="cart-item__price">
+                  <div class="cart-item__price-current">Цена 25 990 ₽</div>
+                  <div class="cart-item__price-old">125 990 ₽</div>
+                </div>
+
+                <button aria-label="Удалить товар" class="cart-item__delete">
+                  <svg width="17" height="14">
+                    <use xlink:href="./assets/sprite.svg#icon-delete"></use>
+                  </svg>
+                </button>
+              </div>
             </li>
           </ul>
           <div class="cart-content__services">

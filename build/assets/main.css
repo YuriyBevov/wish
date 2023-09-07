@@ -1180,6 +1180,7 @@ button.swiper-pagination-bullet {
   --yellow: #ffd80e;
   --breadcrumbs-color: var(--gray-6);
   --input-text-color: #1c468a;
+  --cart-item-border-color: var(--gray-2);
   --base-text-color: #121212;
   --main-bg-color: var(--light);
   --main-transition: .25s ease-in;
@@ -1302,7 +1303,7 @@ a {
 }
 
 /* flex*/
-.flex-wrap, .subscribe-form form fieldset, .lw-section-header {
+.flex-wrap, .cart-item__content-colors li, .cart-item__content-colors, .cart-item, .subscribe-form form fieldset, .lw-section-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1322,7 +1323,7 @@ a {
   justify-content: center;
 }
 
-.flex-column, .company-info__content, .company-card__phones, .catalog-item__header-controls, .catalog-item, .banner-card-item, .subscribe-form {
+.flex-column, .cart-content, .company-info__content, .company-card__phones, .catalog-item__header-controls, .catalog-item, .banner-card-item, .subscribe-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1350,7 +1351,7 @@ a {
 }
 
 /*resets*/
-.list-reset {
+.list-reset, .cart-content__list, .cart-item__content-colors {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -2072,6 +2073,66 @@ a {
   fill: var(--danger);
 }
 
+.cart-item {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 25px;
+  padding: 10px;
+  border: 1px solid var(--cart-item-border-color);
+  border-radius: var(--base-border-radius);
+  background-color: var(--white);
+}
+.cart-item__side {
+  position: relative;
+  outline: 1px solid red;
+}
+.cart-item__side .badge {
+  position: absolute;
+  top: 4px;
+  left: -8px;
+}
+.cart-item__side img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.cart-item__content {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  outline: 1px solid red;
+}
+.cart-item__content-title {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 8px;
+  color: var(--secondary);
+}
+.cart-item__content-colors {
+  gap: 15px;
+}
+.cart-item__content-colors li {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--alt-black);
+}
+
+.color-box {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  border-radius: 2px;
+}
+
 /* Секции */
 .hero__grid {
   display: -ms-grid;
@@ -2323,5 +2384,8 @@ a {
   grid-gap: 20px;
 }
 
+.cart-content {
+  gap: 10px;
+}
 /* Модальные окна */
 /*# sourceMappingURL=main.css.map */
