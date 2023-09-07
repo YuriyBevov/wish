@@ -19,10 +19,20 @@
 @import "./sections/company-info";
 
 @import "./sections/delivery";
-@import "./sections/guaranty";
+
+@import "./sections/warranty/warranty-service";
+@import "./sections/warranty/warranty-terms";
+@import "./sections/warranty/warranty-limitations";
+@import "./sections/warranty/warranty-purchase-returns";
+
 @import "./sections/about";
+
 @import "./sections/payment";
-@import "./sections/contacts";
+
+@import "./sections/contacts/map";
+@import "./sections/contacts/info";
+@import "./sections/contacts/subscribe";
+
 @import "./sections/location";
 @import "./sections/catalog-top";
 
