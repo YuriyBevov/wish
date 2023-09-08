@@ -1,15 +1,29 @@
 .cart-item {
-  @extend .flex-wrap;
+  display: flex;
   align-items: center;
   gap: 25px;
   padding: 10px;
+  padding-right: 25px;
+  margin-bottom: 8px;
   border: 1px solid var(--cart-item-border-color);
   border-radius: var(--base-border-radius);
   background-color: var(--white);
 
+  @include m-b-down(1280px) {
+    gap: 10px;
+  }
+
+  @include m-b-tablet-down {
+    flex-wrap: wrap;
+  }
+
   &__side {
     position: relative;
-    outline: 1px solid red;
+    min-width: 80px;
+
+    @include m-b-tablet-down {
+      align-self: flex-start;
+    }
 
     .badge {
       position: absolute;
@@ -27,7 +41,10 @@
 
   &__content {
     flex-grow: 1;
-    outline: 1px solid red;
+
+    @include m-b-tablet-down {
+      width: calc(100% - 100px);
+    }
 
     &-title {
       font-family: var(--secondary-font);
@@ -38,21 +55,79 @@
       color: var(--secondary);
     }
 
-    &-colors {
-      @extend .flex-wrap;
-      @extend .list-reset;
-      gap: 15px;
-      li {
-        @extend .flex-wrap;
-        align-items: center;
+    &-color {
+      display: flex;
+      align-items: center;
 
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1;
-        color: var(--alt-black);
-      }
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1;
+      color: var(--alt-black);
     }
   }
+
+  &__price {
+    @extend .flex-column;
+    gap: 8px;
+    min-width: 150px;
+
+    &-current {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--secondary);
+    }
+
+    &-old {
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: line-through;
+      color: rgba(123, 121, 122, 0.80);
+    }
+
+    /* up/down desktop-lg(1920),desktop(1440),laptop(1140),tablet-lg(960),tablet(768),mobile-lg(534)*/
+    @include m-b-down(420px) {
+      width: 100%;
+    }
+  }
+
+  &__counter {
+    margin: 0 25px;
+
+    @include m-b-tablet-down {
+      order: 2;
+      margin: 0 auto;
+    }
+
+    @include m-b-down(420px) {
+      margin: 0;
+      margin-right: 25px;
+    }
+  }
+
+  &__delete-item {
+    @extend .btn-default;
+    @extend .flex-centered-content;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+
+    border-radius: 10px;
+    border: 1px solid var(--gray-2);
+
+    @include m-b-tablet-down {
+      order: 3;
+      margin-left: auto;
+    }
+
+    svg {
+      width: 17px;
+      height: 14px;
+      fill: var(--secondary);
+    }
+
+    @extend .hover-opacity;
+  }
+
 }
 
 .color-box {

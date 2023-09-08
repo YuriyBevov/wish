@@ -6,55 +6,42 @@
           Товары в заказе
         </h2>
 
-
         <div class="cart-content">
           <ul class="cart-content__list">
             <li class="cart-content__list-item">
-              <div class="cart-item">
-                <div class="cart-item__side">
-                  <span class="badge">-10%</span>
-                  <img src="./assets/img/cart-item.png" alt="Название товара" width="80" height="80">
-                </div>
-                <div class="cart-item__content">
-                  <h3 class="cart-item__content-title">Планшет Apple iPad mini (2021) 64Gb Wi-Fi Global, розовый</h3>
-                  <ul class="cart-item__content-colors">
-                    <li>
-                      <div class="color-box" aria-hidden="true" style="background-color: pink;"></div>
-                      <span>Розовый</span>
-                    </li>
-                    <li>
-                      <div class="color-box" aria-hidden="true" style="background-color: red;"></div>
-                      <span>Красный</span>
-                    </li>
-                    <li>
-                      <div class="color-box" aria-hidden="true" style="background-color: blue;"></div>
-                      <span>Синий</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="cart-item__counter counter">
-                  @include('../../components/counter.html')
-                </div>
-
-                <div class="cart-item__price">
-                  <div class="cart-item__price-current">Цена 25 990 ₽</div>
-                  <div class="cart-item__price-old">125 990 ₽</div>
-                </div>
-
-                <button aria-label="Удалить товар" class="cart-item__delete">
-                  <svg width="17" height="14">
-                    <use xlink:href="./assets/sprite.svg#icon-delete"></use>
-                  </svg>
-                </button>
-              </div>
+              @include('../../components/cart-item.html')
+            </li>
+            <li class="cart-content__list-item">
+              @include('../../components/cart-item.html')
+            </li>
+            <li class="cart-content__list-item">
+              @include('../../components/cart-item.html')
             </li>
           </ul>
           <div class="cart-content__services">
-            <button type="button">Добавить услуги</button>
-            <ul class="cart-content__services-list">
+            <button type="button" class="js-collapse-btn">
+              Добавить услуги
+            </button>
+            <ul class="cart-content__services-list collapsed">
               <li class="cart-content__services-list-item">
-                1
+                <div class="cart-content__services-list-item-content">
+                  <input type="checkbox" id="serv_1">
+                  <label for="serv_1">Консультация по регистрации учётной записи</label>
+                  <a href="#">Подробнее</a>
+                </div>
+                <div class="cart-content__services-list-item-price">
+                  Цена 290 ₽
+                </div>
+              </li>
+              <li class="cart-content__services-list-item">
+                <div class="cart-content__services-list-item-content">
+                  <input type="checkbox" id="serv_2">
+                  <label for="serv_2">Консультация по регистрации учётной записи</label>
+                  <a href="#">Подробнее</a>
+                </div>
+                <div class="cart-content__services-list-item-price">
+                  Цена 290 ₽
+                </div>
               </li>
             </ul>
           </div>
@@ -65,6 +52,45 @@
         <h2 class="lw-section-title">
           Ваш заказ
         </h2>
+
+        <div class="cart-order__content">
+          <div class="cart-order__content-item">
+            <span class="cart-order__content-item-title">
+              Товаров на:
+            </span>
+            <span class="cart-order__content-item-value">
+              80 000 ₽
+            </span>
+          </div>
+          <div class="cart-order__content-item">
+            <span class="cart-order__content-item-title">
+              Доставка:
+            </span>
+            <span class="cart-order__content-item-value">
+              0 ₽
+            </span>
+          </div>
+        </div>
+
+        <div class="cart-order__promo">
+          <div class="cart-order__promo-title">
+            Введи промокод:
+          </div>
+
+          <div class="cart-order__promo-control">
+            <input type="text">
+            <button type="button"></button>
+          </div>
+        </div>
+
+        <div class="cart-order__price">
+          <span class="cart-order__price-current">
+            Итого: 1 225 990 ₽
+          </span>
+          <span class="cart-order__price-old">
+            Итого: 25 990 ₽
+          </span>
+        </div>
       </div>
     </div>
   </div>
