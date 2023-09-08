@@ -38,6 +38,12 @@
   }
 }
 
+@mixin m-b-down($width) {
+  @media (max-width: ($width)) {
+    @content;
+  }
+}
+
 /*up*/
 
 @mixin m-b-up($width) {

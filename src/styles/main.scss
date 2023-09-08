@@ -12,6 +12,10 @@
 @import "./components/feature-item";
 @import "./components/banner-card-item";
 @import "./components/catalog-item";
+@import "./components/main-card";
+@import "./components/breadcrumbs";
+@import "./components/warranty";
+
 /* Секции */
 @import "./sections/hero";
 @import "./sections/features";
@@ -19,11 +23,6 @@
 @import "./sections/company-info";
 
 @import "./sections/delivery";
-
-@import "./sections/warranty/warranty-service";
-@import "./sections/warranty/warranty-terms";
-@import "./sections/warranty/warranty-limitations";
-@import "./sections/warranty/warranty-purchase-returns";
 
 @import "./sections/about";
 
