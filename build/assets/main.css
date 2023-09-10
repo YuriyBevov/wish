@@ -393,6 +393,7 @@ template {
   display: flex;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
+  -o-transition-property: transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-box-sizing: content-box;
@@ -422,6 +423,7 @@ template {
   position: relative;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
+  -o-transition-property: transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
 }
@@ -440,6 +442,7 @@ template {
   align-items: flex-start;
   -webkit-transition-property: height, -webkit-transform;
   transition-property: height, -webkit-transform;
+  -o-transition-property: transform, height;
   transition-property: transform, height;
   transition-property: transform, height, -webkit-transform;
 }
@@ -477,21 +480,25 @@ template {
 
 .swiper-3d .swiper-slide-shadow-left {
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 .swiper-3d .swiper-slide-shadow-right {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 .swiper-3d .swiper-slide-shadow-top {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 .swiper-3d .swiper-slide-shadow-bottom {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
@@ -654,6 +661,7 @@ template {
   position: absolute;
   text-align: center;
   -webkit-transition: 0.3s opacity;
+  -o-transition: 0.3s opacity;
   transition: 0.3s opacity;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -779,6 +787,7 @@ button.swiper-pagination-bullet {
   display: inline-block;
   -webkit-transition: 0.2s top, 0.2s -webkit-transform;
   transition: 0.2s top, 0.2s -webkit-transform;
+  -o-transition: 0.2s transform, 0.2s top;
   transition: 0.2s transform, 0.2s top;
   transition: 0.2s transform, 0.2s top, 0.2s -webkit-transform;
 }
@@ -798,6 +807,7 @@ button.swiper-pagination-bullet {
 .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   -webkit-transition: 0.2s left, 0.2s -webkit-transform;
   transition: 0.2s left, 0.2s -webkit-transform;
+  -o-transition: 0.2s transform, 0.2s left;
   transition: 0.2s transform, 0.2s left;
   transition: 0.2s transform, 0.2s left, 0.2s -webkit-transform;
 }
@@ -805,6 +815,7 @@ button.swiper-pagination-bullet {
 .swiper-horizontal.swiper-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   -webkit-transition: 0.2s right, 0.2s -webkit-transform;
   transition: 0.2s right, 0.2s -webkit-transform;
+  -o-transition: 0.2s transform, 0.2s right;
   transition: 0.2s transform, 0.2s right;
   transition: 0.2s transform, 0.2s right, 0.2s -webkit-transform;
 }
@@ -990,6 +1001,7 @@ button.swiper-pagination-bullet {
 
 .swiper-free-mode > .swiper-wrapper {
   -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
   margin: 0 auto;
 }
@@ -1010,12 +1022,14 @@ button.swiper-pagination-bullet {
 
 .swiper-fade.swiper-free-mode .swiper-slide {
   -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 
 .swiper-fade .swiper-slide {
   pointer-events: none;
   -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
   transition-property: opacity;
 }
 
@@ -1122,6 +1136,7 @@ button.swiper-pagination-bullet {
   overflow: hidden;
   -webkit-transition-property: opacity, height, -webkit-transform;
   transition-property: opacity, height, -webkit-transform;
+  -o-transition-property: transform, opacity, height;
   transition-property: transform, opacity, height;
   transition-property: transform, opacity, height, -webkit-transform;
 }
@@ -1292,7 +1307,11 @@ a {
   flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
 .flex-centered-content, .favourite-btn, .feature-item, .swiper-button-next, .swiper-button-prev, .lw-main-btn {
+=======
+.flex-centered-content, .main-card__content-row, .favourite-btn, .feature-item, .swiper-button-next, .swiper-button-prev, .lw-main-btn, .lw-item-content {
+>>>>>>> fd4c65a93889e34db19b6e30661b7907f61eede3
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1304,7 +1323,11 @@ a {
   justify-content: center;
 }
 
+<<<<<<< HEAD
 .flex-column, .company-info__content, .contacts-info__desc-block, .contacts-details-overlay__list-item, .main-card__content--column, .main-card, .catalog-item__header-controls, .catalog-item, .banner-card-item {
+=======
+.flex-column, .info__desc-block, .map__info-item, .company-info__content, .main-card__content-column, .main-card, .catalog-item__header-controls, .catalog-item, .banner-card-item, .lw-item-desc-block, .lw-item-content-column {
+>>>>>>> fd4c65a93889e34db19b6e30661b7907f61eede3
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1318,6 +1341,7 @@ a {
 .text-truncate {
   white-space: nowrap;
   overflow: hidden;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
 
@@ -1377,6 +1401,7 @@ a {
 /*transitions*/
 .hover-opacity, .catalog-preview__grid-item, .contacts-subscribe-social a, .contacts-subscribe__grid-content p a, .contacts-details-overlay__list-item-mail a, .contacts-details-overlay__list-item-phone a, .breadcrumbs a, .lw-base-link {
   -webkit-transition: opacity var(--main-transition);
+  -o-transition: opacity var(--main-transition);
   transition: opacity var(--main-transition);
 }
 .hover-opacity:hover, .catalog-preview__grid-item:hover, .contacts-subscribe-social a:hover, .contacts-subscribe__grid-content p a:hover, .contacts-details-overlay__list-item-mail a:hover, .contacts-details-overlay__list-item-phone a:hover, .breadcrumbs a:hover, .lw-base-link:hover, .hover-opacity:focus, .catalog-preview__grid-item:focus, .contacts-subscribe-social a:focus, .contacts-subscribe__grid-content p a:focus, .contacts-details-overlay__list-item-mail a:focus, .contacts-details-overlay__list-item-phone a:focus, .breadcrumbs a:focus, .lw-base-link:focus {
@@ -1385,6 +1410,7 @@ a {
 
 .main-btn-hover, .lw-main-btn {
   -webkit-transition: background-color var(--main-transition), border-color var(--main-transition), color var(--main-transition);
+  -o-transition: background-color var(--main-transition), border-color var(--main-transition), color var(--main-transition);
   transition: background-color var(--main-transition), border-color var(--main-transition), color var(--main-transition);
 }
 @media (min-width: 768px) {
@@ -1397,6 +1423,7 @@ a {
 
 .main-btn-outlined-hover, .lw-main-btn--outlined {
   -webkit-transition: background-color var(--main-transition), border-color var(--main-transition), color var(--main-transition);
+  -o-transition: background-color var(--main-transition), border-color var(--main-transition), color var(--main-transition);
   transition: background-color var(--main-transition), border-color var(--main-transition), color var(--main-transition);
 }
 @media (min-width: 768px) {
@@ -1538,10 +1565,48 @@ a {
     background-color: var(--white);
   }
 }
+.lw-item-content {
+  gap: 1vw;
+}
+@media (max-width: 1023px) {
+  .lw-item-content {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 533px) {
+  .lw-item-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+.lw-item-content-column {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.lw-item-desc-block {
+  margin-bottom: 12px;
+}
+.lw-desc-white {
+  margin: 0;
+  color: var(--white);
+}
+.lw-desc-primary {
+  margin: 0;
+  color: var(--primary);
+}
 .lw-base-link {
   font-family: var(--secondary-font);
   font-size: 12px;
   font-weight: 400;
+  -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   color: var(--secondary);
 }
@@ -1640,6 +1705,7 @@ a {
   filter: saturate(0.4);
   -webkit-transition: -webkit-filter var(--main-transition);
   transition: -webkit-filter var(--main-transition);
+  -o-transition: filter var(--main-transition);
   transition: filter var(--main-transition);
   transition: filter var(--main-transition), -webkit-filter var(--main-transition);
   margin-bottom: 12px;
@@ -1739,10 +1805,14 @@ a {
   font-weight: 700;
   min-height: 58px;
   color: var(--secondary);
-  -webkit-line-clamp: 3; /* Число отображаемых строк */
-  display: -webkit-box; /* Включаем флексбоксы */
-  -webkit-box-orient: vertical; /* Вертикальная ориентация */
-  overflow: hidden; /* Обрезаем всё за пределами блока */
+  -webkit-line-clamp: 3;
+  /* Число отображаемых строк */
+  display: -webkit-box;
+  /* Включаем флексбоксы */
+  -webkit-box-orient: vertical;
+  /* Вертикальная ориентация */
+  overflow: hidden;
+  /* Обрезаем всё за пределами блока */
 }
 .catalog-item__footer {
   display: -webkit-box;
