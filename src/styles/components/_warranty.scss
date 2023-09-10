@@ -11,43 +11,43 @@
           grid-template-columns: repeat(2, 1fr);
         }
       }
-  
+
       @include m-b-laptop-down {
           grid-template-columns: 1fr;
       }
     }
-    
+
     &__grid-item {
 
       @include m-b-laptop-down {
        background-color: var(--white);
       }
-  
+
       p {
         color: var(--base-text-color);
         font-family: var(--base-font);
         font-size: 16px;
         font-weight: 400;
-        line-height: 1.6; 
+        line-height: 1.6;
       }
-  
+
       & p:first-child {
         margin-top: 0;
       }
     }
-  
+
     &__link {
       display: none;
       margin-top: 12px;
-  
+
       @include m-b-laptop-down {
           display: flex;
       }
-    } 
-    
+    }
+
     &-wrapper {
       margin-bottom: 16px;
-      
+
       @include m-b-laptop-down {
         padding: 0;
         background-color: var(--light);

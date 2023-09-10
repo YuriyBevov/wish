@@ -15,6 +15,9 @@
 @import "./components/main-card";
 @import "./components/breadcrumbs";
 @import "./components/warranty";
+@import "./components/contacts-details";
+@import "./components/contacts-info";
+@import "./components/contacts-subscribe";
 
 /* Секции */
 @import "./sections/hero";
@@ -27,10 +30,6 @@
 @import "./sections/about";
 
 @import "./sections/payment";
-
-@import "./sections/contacts/map";
-@import "./sections/contacts/info";
-@import "./sections/contacts/subscribe";
 
 @import "./sections/location";
 @import "./sections/catalog-top";
