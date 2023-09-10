@@ -6,14 +6,19 @@
       grid-gap: 2vw;
       align-items: start;
 
-      @include m-b-down(1400px) {
-        @media (max-width: (1400px)) {
+      @include m-b-desktop-down {
           grid-template-columns: repeat(2, 1fr);
-        }
       }
   
-      @include m-b-down(1340px) {
+      @include m-b-down(1370px) {
           grid-template-columns: 1fr;
+      }
+
+      .main-card {
+        height: auto;
+        img {
+          margin-top: 0;
+        }
       }
     }
     

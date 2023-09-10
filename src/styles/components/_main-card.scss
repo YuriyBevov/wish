@@ -1,5 +1,6 @@
 .main-card {
   @extend .flex-column;
+  height: 100%;
 
   p {
     color: var(--base-text-color);
@@ -32,13 +33,13 @@
 
   &__content {
 
-    @include m-b-down(1400px) {
-      @media (max-width: (1400px)) {
+    @include m-b-desktop-down {
           height: 100%;
-      }
     }
 
-    & img {
+    img {
+      margin-top: auto;
+
       @include m-b-mobile-lg-down {
         width: 120px;
         height: 120px;

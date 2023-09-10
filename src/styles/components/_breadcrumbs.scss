@@ -5,9 +5,7 @@
     margin-top: 10px;
 
     @include m-b-tablet-down {
-      @media (max-width: (767px)) {
         display: none;
-      }
     }
 
     a {
