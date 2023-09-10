@@ -13,20 +13,9 @@
       grid-gap: 16px;
     }
 
-    &-item {
-
-      p {
-        color: var(--base-text-color);
-        font-family: var(--base-font);
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.6; 
-      }
-
-      & p:first-child {
-        margin-top: 0;
-      }
-    }  
+    .main-card {
+      height: auto;
+    }
   }
 
   &-card {
