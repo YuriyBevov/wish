@@ -30,7 +30,7 @@ if (btns) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
 
-swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination]);
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs, swiper__WEBPACK_IMPORTED_MODULE_0__.Controller]);
 var mainSliders = document.querySelectorAll('.main-swiper .swiper');
 
 if (mainSliders) {
@@ -128,7 +128,49 @@ if (catalogItemSliders) {
     });
   });
 }
-/*catalog top slide*/
+/*catalog top slider end*/
+
+/*product thumbs slider*/
+
+
+var productSlider = document.querySelector('.product-detail-slider');
+
+if (productSlider) {
+  var slider = productSlider.querySelector('.product-slider');
+  var thumbs = productSlider.querySelector('.product-thumb-slider');
+  var sliderThumbs = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](thumbs, {
+    spaceBetween: 30,
+    slidesPerView: 4,
+
+    /*watchOverflow: true,
+     watchSlidesVisibility: true,*/
+    watchSlidesProgress: true,
+    clickable: true,
+    navigation: {
+      nextEl: '.product-thumb-slider-container .swiper-button-next',
+      prevEl: '.product-thumb-slider-container .swiper-button-prev'
+    }
+  });
+  var sliderMain = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
+    spaceBetween: 10,
+    slidesPerView: 1,
+
+    /*watchOverflow: true,
+     watchSlidesVisibility: true,*/
+    watchSlidesProgress: true,
+
+    /* navigation: {
+       nextEl: mainBtnNext ? mainBtnNext : null,
+       prevEl: mainBtnPrev ? mainBtnPrev : null
+     },*/
+    thumbs: {
+      swiper: sliderThumbs
+    }
+  });
+  console.log(sliderMain.controller);
+  /*sliderMain.controller.control = sliderThumbs;*/
+}
+/*product thumbs slider end*/
 
 /***/ }),
 

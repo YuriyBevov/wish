@@ -1,0 +1,11 @@
+.product-detail {
+  &__grid {
+    display: grid;
+    grid-template-columns: 550px auto 480px;
+    gap: 20px;
+  }
+
+  &__grid-section {
+
+  }
+}

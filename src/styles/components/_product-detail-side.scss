@@ -1,0 +1,18 @@
+.product-detail-side {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+    .feature-item {
+      border-radius: 10px;
+      border: 1px solid var(--gray-2);
+
+      &__text {
+        color: var(--primary);
+      }
+    }
+  }
+
+
+}
