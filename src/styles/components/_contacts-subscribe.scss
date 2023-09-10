@@ -1,0 +1,106 @@
+.contacts-subscribe {
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    grid-gap: 2vw;  
+    align-items: center;
+
+    @include m-b-down(1270px) {
+      grid-template-columns: 1fr;
+    }  
+
+    &-content {
+
+      h2 {
+        color: var(--secondary);
+        font-family: var(--secondary-font);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.4;
+        letter-spacing: -0.24px;
+        margin: 0 0 10px 0;
+  
+        @include m-b-mobile-lg-down {
+          font-size: 18px;
+        }  
+      }
+  
+      p { 
+        a {
+          @extend .hover-opacity;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+  
+      span {
+        color: var(--alt-black);
+        font-family: var(--base-font);
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 1.6;
+      }
+  
+      & img {
+        width: auto;
+        height: auto;
+      }
+    }
+
+  }
+
+  &__images {
+    background-image: url(../../assets/img/contacts/fon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    grid-gap: 1vw;
+
+    @include m-b-down(1270px) {
+      order: 2;
+    }
+
+    @include m-b-mobile-lg-down {
+      grid-template-columns: 1fr;
+      background-image: none;
+    }
+  }
+
+  &__images img {
+    @include m-b-mobile-lg-down {
+      width: 100%;
+    }
+  }
+
+  &__images-item {
+    @include m-b-mobile-lg-down {
+      display: none;
+    }
+  }
+
+  &-social-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+
+  }
+
+ &-social {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+ }
+
+  &-social a {
+    @extend .hover-opacity;
+  }
+
+}

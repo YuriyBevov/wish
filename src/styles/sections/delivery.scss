@@ -2,11 +2,10 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2vw;
+    grid-gap: 24px;
 
-      @include m-b-laptop-down {
+      @include m-b-down(1200px) {
         grid-template-columns: 1fr;
-        grid-gap: 3vw;
       }
   }
 
@@ -25,7 +24,4 @@
         left: -15px;
       }
   } 
-  p {
-    color: var(--alt-black);
-  }
 }

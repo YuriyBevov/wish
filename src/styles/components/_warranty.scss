@@ -12,15 +12,16 @@
         }
       }
   
-      @include m-b-laptop-down {
+      @include m-b-down(1340px) {
           grid-template-columns: 1fr;
       }
     }
     
     &__grid-item {
+      background-color: var(--light);
 
       @include m-b-laptop-down {
-       background-color: var(--white);
+        background-color: var(--white);
       }
   
       p {
@@ -40,7 +41,7 @@
       display: none;
       margin-top: 12px;
   
-      @include m-b-laptop-down {
+      @include m-b-tablet-down {
           display: flex;
       }
     } 
