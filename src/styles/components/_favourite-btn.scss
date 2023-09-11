@@ -1,0 +1,15 @@
+.favourite-btn {
+  @extend.flex-centered-content;
+  width: 24px;
+  height: 24px;
+
+  svg {
+    fill: #97a2ac;
+  }
+
+  &.active {
+    svg {
+      fill: var(--danger);
+    }
+  }
+}

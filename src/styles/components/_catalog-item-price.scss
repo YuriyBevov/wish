@@ -1,0 +1,31 @@
+.catalog-item-price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  line-height: 1;
+  gap: 10px;
+
+  &-discount {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 5px 3px;
+    border-radius: 6px;
+    border: 1px solid #E92150;
+    color: var(--alt-black);
+  }
+
+  &-old {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(123, 121, 122, 0.80);
+    text-decoration: line-through;
+  }
+
+  &-current {
+    width: 100%;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--secondary);
+  }
+}

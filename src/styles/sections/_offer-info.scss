@@ -1,0 +1,92 @@
+.offer-info {
+
+  &__container {
+
+  }
+
+  &__content {
+    @extend .flex-column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: 600px;
+    height: fit-content;
+    min-height: 476px;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 24px;
+    background-color: var(--white);
+
+    @include m-b-mobile-lg-down {
+      padding: 30px 10px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    padding-left: 35px;
+    line-height: 1;
+    color: var(--primary);
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 32px;
+      content: '';
+
+      background-image: url("../assets/img/icon-rounded-check.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  &__list {
+    @extend .list-reset;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  &__list-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    span {
+      font-family: var(--secondary-font);
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: -0.16px;
+      color: var(--secondary);
+    }
+
+    span:first-child {
+      display: inline-block;
+      margin-right: 20px;
+      min-width: 100px;
+      background-color: var(--white);
+    }
+
+    span:last-child {
+      position: relative;
+      text-align: end;
+    }
+  }
+
+  &__text {
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.16px;
+    text-align: center;
+    color: #a9a9a9;
+
+    a {
+      color: var(--primary);
+    }
+  }
+}

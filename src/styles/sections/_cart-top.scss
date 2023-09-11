@@ -1,0 +1,25 @@
+.cart-top {
+  &__grid {
+    display: grid;
+    grid-template-columns: auto 390px;
+    grid-gap: 20px;
+
+    /* up/down desktop-lg(1920),desktop(1440),laptop(1140),tablet-lg(960),tablet(768),mobile-lg(534)*/
+    @include m-b-down(1200px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.cart-content {
+  @extend .flex-column;
+  gap: 10px;
+
+  &__list {
+    @extend .list-reset;
+  }
+
+  &__list-item {
+
+  }
+}

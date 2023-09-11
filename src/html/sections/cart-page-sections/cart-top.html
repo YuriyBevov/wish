@@ -1,0 +1,98 @@
+<section class="lw-section cart-top">
+  <div class="lw-container">
+    <div class="cart-top__grid">
+      <div class="cart-list lw-alt-color-wrapper">
+        <h2 class="lw-section-title">
+          Товары в заказе
+        </h2>
+
+        <div class="cart-content">
+          <ul class="cart-content__list">
+            <li class="cart-content__list-item">
+              @include('../../components/cart-item.html')
+            </li>
+            <li class="cart-content__list-item">
+              @include('../../components/cart-item.html')
+            </li>
+            <li class="cart-content__list-item">
+              @include('../../components/cart-item.html')
+            </li>
+          </ul>
+          <div class="cart-content__services">
+            <button type="button" class="js-collapse-btn">
+              Добавить услуги
+            </button>
+            <ul class="cart-content__services-list collapsed">
+              <li class="cart-content__services-list-item">
+                <div class="cart-content__services-list-item-content">
+                  <input type="checkbox" id="serv_1">
+                  <label for="serv_1">Консультация по регистрации учётной записи</label>
+                  <a href="#">Подробнее</a>
+                </div>
+                <div class="cart-content__services-list-item-price">
+                  Цена 290 ₽
+                </div>
+              </li>
+              <li class="cart-content__services-list-item">
+                <div class="cart-content__services-list-item-content">
+                  <input type="checkbox" id="serv_2">
+                  <label for="serv_2">Консультация по регистрации учётной записи</label>
+                  <a href="#">Подробнее</a>
+                </div>
+                <div class="cart-content__services-list-item-price">
+                  Цена 290 ₽
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-order lw-alt-color-wrapper">
+        <h2 class="lw-section-title">
+          Ваш заказ
+        </h2>
+
+        <div class="cart-order__content">
+          <div class="cart-order__content-item">
+            <span class="cart-order__content-item-title">
+              Товаров на:
+            </span>
+            <span class="cart-order__content-item-value">
+              80 000 ₽
+            </span>
+          </div>
+          <div class="cart-order__content-item">
+            <span class="cart-order__content-item-title">
+              Доставка:
+            </span>
+            <span class="cart-order__content-item-value">
+              0 ₽
+            </span>
+          </div>
+        </div>
+
+        <div class="cart-order__promo">
+          <div class="cart-order__promo-title">
+            Введи промокод:
+          </div>
+
+          <div class="cart-order__promo-control">
+            <input type="text">
+            <button type="button"></button>
+          </div>
+        </div>
+
+        <div class="cart-order__price">
+          <span class="cart-order__price-current">
+            Итого: 1 225 990 ₽
+          </span>
+          <span class="cart-order__price-old">
+            Итого: 25 990 ₽
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

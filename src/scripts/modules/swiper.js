@@ -1,5 +1,5 @@
-import Swiper, {Navigation, Pagination} from 'swiper';
-Swiper.use([Navigation, Pagination]);
+import Swiper, {Navigation, Pagination, Thumbs, Controller} from 'swiper';
+Swiper.use([Navigation, Pagination, Thumbs, Controller]);
 
 const mainSliders = document.querySelectorAll('.main-swiper .swiper');
 
@@ -106,4 +106,49 @@ if(catalogItemSliders) {
   });
 }
 
-/*catalog top slide*/
+/*catalog top slider end*/
+
+/*product thumbs slider*/
+const productSlider = document.querySelector('.product-detail-slider');
+
+if(productSlider) {
+  const slider = productSlider.querySelector('.product-slider');
+  const thumbs = productSlider.querySelector('.product-thumb-slider');
+
+  const sliderThumbs = new Swiper(thumbs, {
+    spaceBetween: 30,
+    slidesPerView: 4,
+    /*watchOverflow: true,
+     watchSlidesVisibility: true,*/
+    watchSlidesProgress: true,
+    clickable: true,
+
+    navigation: {
+      nextEl: '.product-thumb-slider-container .swiper-button-next',
+      prevEl: '.product-thumb-slider-container .swiper-button-prev'
+    },
+  });
+
+  const sliderMain = new Swiper(slider, {
+    spaceBetween: 10,
+    slidesPerView: 1,
+    /*watchOverflow: true,
+     watchSlidesVisibility: true,*/
+    watchSlidesProgress: true,
+
+   /* navigation: {
+      nextEl: mainBtnNext ? mainBtnNext : null,
+      prevEl: mainBtnPrev ? mainBtnPrev : null
+    },*/
+    thumbs: {
+      swiper: sliderThumbs,
+    },
+  });
+
+  console.log(sliderMain.controller)
+
+  /*sliderMain.controller.control = sliderThumbs;*/
+}
+/*product thumbs slider end*/
+
+

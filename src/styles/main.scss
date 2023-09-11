@@ -7,11 +7,15 @@
 @import "extends";
 @import "common";
 
+/*layout*/
+@import "./layout/footer";
+
 /* Компоненты */
 @import "./components/swiper-slider-common";
 @import "./components/feature-item";
 @import "./components/banner-card-item";
 @import "./components/catalog-item";
+
 @import "./components/main-card";
 @import "./components/breadcrumbs";
 @import "./components/warranty";
@@ -19,6 +23,21 @@
 @import "./components/contacts-info";
 @import "./components/contacts-subscribe";
 @import "./components/note-card";
+
+@import "./components/company-law";
+@import "./components/company-card";
+@import "./components/catalog-item-status";
+@import "./components/catalog-item-price";
+@import "./components/badge";
+@import "./components/favourite-btn";
+@import "./components/cart-content";
+@import "./components/cart-order";
+@import "./components/cart-item";
+@import "./components/counter";
+@import "./components/order-form";
+@import "./components/product-detail-slider";
+@import "./components/product-detail-side";
+
 
 /* Секции */
 @import "./sections/hero";
@@ -34,6 +53,12 @@
 
 @import "./sections/location";
 @import "./sections/catalog-top";
+
+
+
+@import "./sections/cart-top";
+@import "./sections/offer-info";
+@import "./sections/product-detail";
 
 /* Модальные окна */
 

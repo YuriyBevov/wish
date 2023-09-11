@@ -1,0 +1,113 @@
+<section class="lw-section">
+  <div class="lw-container">
+    <div class="lw-alt-color-wrapper">
+      <h2 class="lw-section-title">
+        Оформление заказа
+      </h2>
+
+      <form action="#" class="order-form">
+        <div class="order-form__container">
+          <div class="order-form__section lw-alt-color-wrapper active">
+            <a href="#" class="order-form__section-title">
+              <small>1 этап</small>
+              <span>Форма оплаты и доставка</span>
+            </a>
+
+            <div class="order-form__section-content">
+
+              <div class="order-form__section-content-field">
+                <span>Тип плательщика</span>
+                <fieldset>
+                  <input type="radio" name="user_type" id="user_type_1">
+                  <label for="user_type_1">Юридическое лицо</label>
+                </fieldset>
+                <fieldset>
+                  <input type="radio" name="user_type" id="user_type_2" checked>
+                  <label for="user_type_2">Физическое лицо</label>
+                </fieldset>
+              </div>
+
+              <div class="order-form__section-content-field">
+                <span>Способ доставки</span>
+
+                <fieldset>
+                  <input type="radio" name="delivery_type" id="delivery_type_1" checked>
+                  <label for="delivery_type_1">Самовывоз из магазина</label>
+                </fieldset>
+                <fieldset>
+                  <input type="radio" name="delivery_type" id="delivery_type_2">
+                  <label for="delivery_type_2">Доставка по Москве (в пределах МКАД)</label>
+                </fieldset>
+                <fieldset>
+                  <input type="radio" name="delivery_type" id="delivery_type_3">
+                  <label for="delivery_type_3">Доставка по Москве (за МКАД)</label>
+                </fieldset>
+              </div>
+
+              <div class="order-form__section-content-field">
+                <span>Форма оплаты</span>
+
+                <fieldset>
+                  <input type="radio" name="payment_type" id="payment_type_1">
+                  <label for="payment_type_1">Наличные</label>
+                </fieldset>
+                <fieldset>
+                  <input type="radio" name="payment_type" id="payment_type_2" checked>
+                  <label for="payment_type_2">Оплата картой при получении</label>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <div class="order-form__section lw-alt-color-wrapper">
+            <a href="#" class="order-form__section-title">
+              <small>2 этап</small>
+              <span>Авторизация</span>
+            </a>
+
+            <div class="order-form__section-content">
+              <div class="order-form__section-content-field order-form__section-content-field--column">
+                <fieldset>
+                  <label for="user_name">ФИО</label>
+                  <input type="text" id="user_name">
+                </fieldset>
+
+                <fieldset>
+                  <label for="user_phone">Телефон</label>
+                  <input type="text" id="user_phone">
+                </fieldset>
+
+                <fieldset>
+                  <label for="user_mail">E-mail</label>
+                  <input type="text" id="user_mail">
+                </fieldset>
+
+                <fieldset>
+                  <label for="user_text">ФИО</label>
+                  <textarea name="user_text" id="user_text"></textarea>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <div class="order-form__section lw-alt-color-wrapper">
+            <a href="#" class="order-form__section-title">
+              <small>3 этап</small>
+              <span>Подтверждение заказа</span>
+            </a>
+
+            <div class="order-form__section-content">
+              <div class="order-form__section-content-field">
+                <div class="order-form__section-content-price">
+                  <span>Итого</span>
+                  <span>1 225 990 ₽</span>
+                </div>
+              </div>
+              <div class="order-form__section-content-field">
+                <input type="submit" class="lw-main-btn" value="Оформить заказ">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
