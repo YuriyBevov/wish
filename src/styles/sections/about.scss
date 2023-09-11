@@ -3,8 +3,9 @@
 
   &__grid-top {
     display: grid;
-    grid-template-columns: 4fr 6fr;
-    grid-gap: 24px;
+    grid-template-columns: 5fr 6fr;
+    grid-column-gap: 42px;
+    grid-row-gap: 24px;
     align-items: start;
     margin-bottom: 24px;
 
@@ -33,7 +34,7 @@
 
   &__grid-bottom {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(13, 1fr);
     grid-gap: 24px;
 
     @include m-b-desktop-down {
@@ -47,7 +48,7 @@
     }
 
     &-content-block {
-      grid-column: 3/6;
+      grid-column: 7/14;
 
       @include m-b-desktop-down {
         grid-column: 1/6;

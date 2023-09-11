@@ -31,6 +31,14 @@
     }
   }
 
+  &--light {
+    background-color: var(--light);
+
+    @include m-b-laptop-down {
+      background-color: var(--white);
+    }
+  }
+
   &__content {
 
     @include m-b-desktop-down {
@@ -49,11 +57,13 @@
     &--column {
         @extend .flex-column;
         align-items: flex-start;
+        height: 100%;
     }
     &--row {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        gap: 20px;
 
         @include m-b-down(640px) {
             flex-direction: column;
