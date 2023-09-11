@@ -1,0 +1,39 @@
+.breadcrumbs {
+    @extend .flex-wrap;
+    align-items: center;
+    margin-bottom: 24px;
+    margin-top: 10px;
+
+    @include m-b-tablet-down {
+        display: none;
+    }
+
+    a {
+      @extend .hover-opacity;
+      position: relative;
+      color: var(--breadcrumbs-color);
+      margin: 0 20px 0 10px;
+    }
+
+    a:first-child {
+      margin-left: 0;
+      @include m-b-tablet-down {
+        margin-left: 10px;
+      }
+    }
+    a:after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: -20px;
+      width: 11px;
+      height: 10px;
+      background-image: url(../assets/img/delivery/arrow.svg);
+      background-size: cover;
+    }
+
+    span {
+      margin: 0 0 0 10px;
+      color: var(--breadcrumbs-color);
+    }
+  }

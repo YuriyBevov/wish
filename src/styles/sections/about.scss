@@ -1,0 +1,72 @@
+
+.about {
+
+  &__grid-top {
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    grid-column-gap: 42px;
+    grid-row-gap: 24px;
+    align-items: start;
+    margin-bottom: 24px;
+
+    @include m-b-desktop-down {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include m-b-down(1240px) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .main-card:nth-child(2) {
+      grid-column: 2/3;
+      grid-row: 1/3;
+    }
+
+    .main-card__content {
+      img {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__grid-bottom {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-gap: 24px;
+
+    @include m-b-desktop-down {
+      grid-template-columns: 1fr;
+    }
+
+    @include m-b-laptop-down {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &-content-block {
+      grid-column: 7/14;
+
+      @include m-b-desktop-down {
+        grid-column: 1/6;
+      }
+    }
+
+    &-content-block:nth-child(2) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+
+      @include m-b-laptop-down {
+        grid-template-columns: 1fr;
+      }
+
+      @include m-b-laptop-down {
+        gap: 16px;
+      }
+    }
+  }
+}

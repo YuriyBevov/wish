@@ -1,0 +1,27 @@
+.payment {
+  &__grid {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-gap: 52px;
+    align-items: start;
+
+    @include m-b-laptop-down {
+        grid-template-columns: 1fr;
+      }
+
+    @include m-b-tablet-down {
+      grid-gap: 16px;
+    }
+
+    .main-card {
+      height: auto;
+    }
+  }
+
+  &-card {
+        @include m-b-mobile-lg-down {
+          flex-direction: row;
+          align-items: center;
+      }
+  }
+}

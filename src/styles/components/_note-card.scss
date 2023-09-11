@@ -1,0 +1,28 @@
+.note-card {
+  @extend .flex-centered-content;
+  background: var(--primary);
+
+  img {
+    display: none;
+  }
+
+  p {
+    margin: 0;
+    color: var(--white);
+  }
+
+  &__content {
+    @extend .flex-centered-content;
+  }
+
+  &--icon {
+    img {
+      display: flex;
+      padding-right: 30px;
+
+      @include m-b-mobile-lg-down {
+        display: none;
+      }
+    }
+  }
+}
