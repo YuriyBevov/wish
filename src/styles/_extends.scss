@@ -93,6 +93,15 @@
   }
 }
 
+.filter-reset-hover {
+  transition: filter var(--main-transition);
+
+  &:hover,
+  &:focus {
+    filter: none;
+  }
+}
+
 .main-btn-hover {
   transition: background-color var(--main-transition), border-color var(--main-transition), color var(--main-transition);
 
@@ -129,4 +138,8 @@
 
 .section-border {
   border-radius: 12px !important;
+}
+
+.image-filter {
+  filter: saturate(0.4);
 }

@@ -12,7 +12,7 @@
     max-width: var(--container-fluid-width);
   }
 
-  &-alt-color-wrapper {
+  &-rounded-wrapper {
     padding: 32px ;
     background-color: var(--white);
     border-radius: var(--base-border-radius);
@@ -199,5 +199,4 @@
       @extend .main-btn-outlined-hover;
     }
   }
-
 }

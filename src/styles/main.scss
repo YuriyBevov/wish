@@ -6,6 +6,7 @@
 @import "global";
 @import "extends";
 @import "common";
+@import "keyframes";
 
 /*layout*/
 @import "./layout/footer";
@@ -18,7 +19,7 @@
 
 @import "./components/main-card";
 @import "./components/breadcrumbs";
-@import "./components/warranty";
+@import "./sections/warranty";
 @import "./components/contacts-details";
 @import "./components/contacts-info";
 @import "./components/contacts-subscribe";
@@ -38,23 +39,16 @@
 @import "./components/product-detail-slider";
 @import "./components/product-detail-side";
 
-
 /* Секции */
 @import "./sections/hero";
 @import "./sections/features";
 @import "./sections/catalog-preview";
 @import "./sections/company-info";
-
 @import "./sections/delivery";
-
 @import "./sections/about";
-
 @import "./sections/payment";
-
 @import "./sections/location";
 @import "./sections/catalog-top";
-
-
 
 @import "./sections/cart-top";
 @import "./sections/offer-info";

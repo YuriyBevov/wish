@@ -1,0 +1,103 @@
+.warranty {
+  &__list {
+    @extend .list-reset;
+  }
+
+  &__list-item {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    grid-gap: 2vw;
+    align-items: start;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    @include m-b-desktop-down {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include m-b-down(1360px) {
+      grid-template-columns: 1fr;
+    }
+
+    &.active .main-card {
+      img {
+        filter: none;
+      }
+    }
+
+    .main-card--bg-primary {
+      transition: color var(--main-transition), background-color var(--main-transition);
+    }
+
+    &:not(.active) {
+      @include m-b-tablet-down {
+        .main-card:nth-child(2) {
+          display: none;
+        }
+
+        .main-card--bg-primary {
+          color: var(--base-text-color);
+          background: var(--white);
+          transition: color var(--main-transition), background-color var(--main-transition);
+
+          p {
+            color: var(--base-text-color);
+            transition: color var(--main-transition);
+          }
+        }
+      }
+    }
+
+    &.active {
+      @include m-b-tablet-down {
+        .lw-title-sm {
+          color: var(--white);
+        }
+        .lw-main-btn {
+          border-color: var(--white);
+          color: var(--white);
+          transition: color var(--main-transition), border var(--main-transition);
+        }
+
+        .main-card:nth-child(2) {
+          animation: fadeIn .4s linear;
+        }
+      }
+    }
+
+    .main-card {
+      height: fit-content;
+
+      &:nth-child(1) {
+        position: sticky;
+        top: 25px;
+        height: auto;
+        z-index: 2;
+
+        @include m-b-down(1360px) {
+          position: initial;
+        }
+      }
+
+      img {
+        margin-top: 0;
+
+        @include m-b-tablet-down {
+          filter: saturate(.4);
+          transition: filter var(--main-transition);
+        }
+      }
+    }
+  }
+
+  .lw-main-btn {
+    display: none;
+    margin-top: 12px;
+
+    @include m-b-tablet-down {
+      display: flex;
+    }
+  }
+}
