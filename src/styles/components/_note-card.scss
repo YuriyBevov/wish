@@ -1,21 +1,39 @@
 .note-card {
-  @extend .flex-centered-content;
+  @extend .flex-column;
   background: var(--primary);
 
   img {
     display: none;
   }
 
-  p {
-    margin: 0;
+  span {
+    display: inline-block;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.32px;
+    margin-bottom: 6px;
+    color: var(--white);
+  }
+
+
+
+  a {
+    display: flex;
+    margin-top: 6px;
     color: var(--white);
   }
 
   &__content {
     @extend .flex-centered-content;
+
+    p {
+      margin: 0;
+      color: var(--white);
+    }
   }
 
-  &--icon {
+  &--iconed {
     img {
       display: flex;
       padding-right: 30px;

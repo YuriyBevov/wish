@@ -168,36 +168,32 @@ if (productSlider) {
   var slider = productSlider.querySelector('.product-slider');
   var thumbs = productSlider.querySelector('.product-thumb-slider');
   var sliderThumbs = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](thumbs, {
-    spaceBetween: 30,
+    spaceBetween: 10,
     slidesPerView: 4,
-
-    /*watchOverflow: true,
-     watchSlidesVisibility: true,*/
+    watchOverflow: true,
+    watchSlidesVisibility: true,
     watchSlidesProgress: true,
     clickable: true,
-    navigation: {
-      nextEl: '.product-thumb-slider-container .swiper-button-next',
-      prevEl: '.product-thumb-slider-container .swiper-button-prev'
+    breakpoints: {
+      535: {
+        spaceBetween: 30
+      }
     }
   });
   var sliderMain = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
     spaceBetween: 10,
     slidesPerView: 1,
-
-    /*watchOverflow: true,
-     watchSlidesVisibility: true,*/
+    watchOverflow: true,
+    watchSlidesVisibility: true,
     watchSlidesProgress: true,
-
-    /* navigation: {
-       nextEl: mainBtnNext ? mainBtnNext : null,
-       prevEl: mainBtnPrev ? mainBtnPrev : null
-     },*/
     thumbs: {
       swiper: sliderThumbs
+    },
+    navigation: {
+      nextEl: '.product-thumb-slider-container .swiper-button-next',
+      prevEl: '.product-thumb-slider-container .swiper-button-prev'
     }
   });
-  console.log(sliderMain.controller);
-  /*sliderMain.controller.control = sliderThumbs;*/
 }
 /*product thumbs slider end*/
 

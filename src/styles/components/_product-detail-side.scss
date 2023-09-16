@@ -1,8 +1,32 @@
 .product-detail-side {
+  @extend .flex-column;
+  gap: 8px;
+
+  @include m-b-down(1480px) {
+    flex-direction: row;
+  }
+
+  @include m-b-down(960px) {
+    flex-direction: column;
+  }
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+
+    @include m-b-down(1480px) {
+      flex-grow: 1;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include m-b-tablet-down {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include m-b-down(420px) {
+      grid-template-columns: 1fr;
+    }
 
     .feature-item {
       border-radius: 10px;
@@ -14,5 +38,23 @@
     }
   }
 
+  .note-card {
+    @include m-b-down(1480px) {
+      max-width: 300px;
+      align-items: center;
+      justify-content: center;
+    }
 
+    @include m-b-down(960px) {
+      max-width: 100%;
+      align-items: initial;
+      justify-content: initial;
+    }
+
+    &__content p {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: -0.13px;
+    }
+  }
 }
